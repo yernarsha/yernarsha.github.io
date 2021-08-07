@@ -1,0 +1,630 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+		<title>Машина решает этюды</title>
+		<meta name="keywords" content="компьютер, программа, тогызкумалак, Павлодар, казахская, национальная, игра">
+		<meta name="description" content="Компьютерная программа Тогызкумалак">
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div id="header">
+			<div id="logo"><span id="company_name">Тогызкумалак</span><span>Тогызкумалак</span></div>
+			<ul>
+				<li id="menu_li_1"><a href="index.html">Главная</a></li>
+				<li id="menu_li_2"><a href="news.html">Новости</a></li>
+				<li><a href="toguzkumalak.html">О программе</a></li>
+<li><a href="applications.html">Приложения</a></li>
+<li><a href="blogs.html">Блог</a></li>
+				<li><a href="pavlodar.html">Павлодар</a></li>
+				<li><a href="contacts.html">Контакты</a></li>
+				<li><a href="links.html">Ссылки</a></li>
+			</ul>
+		</div>
+		<div id="content">
+<p></p>
+<div align=center><B>Машина решает этюды</B></div>
+<p></p><p></p>
+Около тридцати лет назад издательство "Жалын" выпустило книгу "Тогыз кумалак". Книгу написал Абилда Акшураев, и это была, пожалуй, первая серьезная попытка дать теоретическое описание основных принципов игры тогызкумалак. Помимо того, что в книге содержались созданные автором этюды и сыгранные в турнирах партии, она также включала в себя позиционные и тактические приемы, комбинации, была дана классификация дебютов. Кроме того, Акшураевым была проведена связь между игрой и математикой (подсчет ходов в концовке игры, влияние туздыка в той или иной лунке на количество оставшихся ходов, количество кумалаков, гарантированно набираемых даже при проигранном атсырау, и т.д.)
+<p></p>
+В главе "Этюды" приводится восемь этюдов, составленных автором книги, предлагается их решить, но решение в книге не приводится (по крайней мере, в издании 1983-го года, которое имеется у меня).
+<p></p>
+На программе "Тогызкумалак 2011" были протестированы все восемь этюдов, и она их решила. Задачи потребовали разное количество времени, поскольку для тех или иных задач потребовалась разная глубина перебора.
+<p></p>
+<div align="center"><img src="images/robot_thinks.jpg" width="170" height="135"></div>
+<p></p><p></p>
+Для начала вам предлагается самим решить этюды, а потом сравнить свое решение с решением программы, которое будет приведено позже.
+<p></p>
+Условимся, что в приводимых диаграммах нижний ряд лунок принадлежит белым, верхний ряд - черным, правый казан - это казан белых, а левый казан - это казан черных.
+<p></p>
+
+Этюд 1. Ход белых, выигрыш.
+<p></p>
+<div align=center><table border=1 cellpadding=1 bordercolor="#000000" cellspacing=2 bgcolor="#ffffff">
+<tr valign=top>
+<td rowspan=2 width=50><font size=5 color="#000000" face="Arial">
+<div align=center>72</div>
+</font>
+</td>
+<td width=50><br>
+</td>
+<td width=50><br>
+</td>
+<td width=50><br>
+</td>
+<td width=50><br>
+</td>
+<td width=50><br>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>2</div>
+</font>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>2</div>
+</font>
+</td>
+<td width=50><br>
+</td>
+<td width=50><br>
+</td>
+<td rowspan=2 width=50><font size=5 color="#000000" face="Arial">
+<div align=center>78</div>
+</font>
+</td>
+</tr>
+<tr valign=top>
+<td width=50><br>
+</td>
+<td width=50><br>
+</td>
+<td width=50><br>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>1</div>
+</font>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>x</div>
+</font>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>1</div>
+</font>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>3</div>
+</font>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>2</div>
+</font>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>1</div>
+</font>
+</td>
+</tr>
+</table>
+</div>
+
+<p></p><p></p>
+Этюд 2. Ход белых, ничья.
+<p></p>
+<div align=center><table border=1 cellpadding=1 bordercolor="#000000" cellspacing=2 bgcolor="#ffffff">
+<tr valign=top>
+<td rowspan=2 width=50><font size=5 color="#000000" face="Arial">
+<div align=center>76</div>
+</font>
+</td>
+<td width=50><br>
+</td>
+<td width=50><br>
+</td>
+<td width=50><br>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>1</div>
+</font>
+</td>
+<td width=50><br>
+</td>
+<td width=50><br>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>x</div>
+</font>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>2</div>
+</font>
+</td>
+<td width=50><br>
+</td>
+<td rowspan=2 width=50><font size=5 color="#000000" face="Arial">
+<div align=center>77</div>
+</font>
+</td>
+</tr>
+<tr valign=top>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>x</div>
+</font>
+</td>
+<td width=50><br>
+</td>
+<td width=50><br>
+</td>
+<td width=50><br>
+</td>
+<td width=50><br>
+</td>
+<td width=50><br>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>4</div>
+</font>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>1</div>
+</font>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>1</div>
+</font>
+</td>
+</tr>
+</table>
+</div>
+
+<p></p><p></p>
+Этюд 3. Ход белых, выигрыш.
+<p></p>
+<div align=center><table border=1 cellpadding=1 bordercolor="#000000" cellspacing=2 bgcolor="#ffffff">
+<tr valign=top>
+<td rowspan=2 width=50><font size=5 color="#000000" face="Arial">
+<div align=center>55</div>
+</font>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>2</div>
+</font>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>3</div>
+</font>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>2</div>
+</font>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>5</div>
+</font>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>1</div>
+</font>
+</td>
+<td width=50><br>
+</td>
+<td width=50><br>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>9</div>
+</font>
+</td>
+<td width=50><br>
+</td>
+<td rowspan=2 width=50><font size=5 color="#000000" face="Arial">
+<div align=center>66</div>
+</font>
+</td>
+</tr>
+<tr valign=top>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>x</div>
+</font>
+</td>
+<td width=50><br>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>2</div>
+</font>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>3</div>
+</font>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>4</div>
+</font>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>8</div>
+</font>
+</td>
+<td width=50><br>
+</td>
+<td width=50><br>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>2</div>
+</font>
+</td>
+</tr>
+</table>
+</div>
+
+<p></p><p></p>
+Этюд 4. Ход белых, выигрыш.
+<p></p>
+<div align=center><table border=1 cellpadding=1 bordercolor="#000000" cellspacing=2 bgcolor="#ffffff">
+<tr valign=top>
+<td rowspan=2 width=50><font size=5 color="#000000" face="Arial">
+<div align=center>73</div>
+</font>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>1</div>
+</font>
+</td>
+<td width=50><br>
+</td>
+<td width=50><br>
+</td>
+<td width=50><br>
+</td>
+<td width=50><br>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>2</div>
+</font>
+</td>
+<td width=50><br>
+</td>
+<td width=50><br>
+</td>
+<td width=50><br>
+</td>
+<td rowspan=2 width=50><font size=5 color="#000000" face="Arial">
+<div align=center>74</div>
+</font>
+</td>
+</tr>
+<tr valign=top>
+<td width=50><br>
+</td>
+<td width=50><br>
+</td>
+<td width=50><br>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>x</div>
+</font>
+</td>
+<td width=50><br>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>3</div>
+</font>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>3</div>
+</font>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>3</div>
+</font>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>3</div>
+</font>
+</td>
+</tr>
+</table>
+</div>
+
+<p></p><p></p>
+Этюд 5. Ход белых, выигрыш.
+<p></p>
+<div align=center><table border=1 cellpadding=1 bordercolor="#000000" cellspacing=2 bgcolor="#ffffff">
+<tr valign=top>
+<td rowspan=2 width=50><font size=5 color="#000000" face="Arial">
+<div align=center>66</div>
+</font>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>2</div>
+</font>
+</td>
+<td width=50><br>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>1</div>
+</font>
+</td>
+<td width=50><br>
+</td>
+<td width=50><br>
+</td>
+<td width=50><br>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>7</div>
+</font>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>2</div>
+</font>
+</td>
+<td width=50><br>
+</td>
+<td rowspan=2 width=50><font size=5 color="#000000" face="Arial">
+<div align=center>76</div>
+</font>
+</td>
+</tr>
+<tr valign=top>
+<td width=50><br>
+</td>
+<td width=50><br>
+</td>
+<td width=50><br>
+</td>
+<td width=50><br>
+</td>
+<td width=50><br>
+</td>
+<td width=50><br>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>3</div>
+</font>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>3</div>
+</font>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>2</div>
+</font>
+</td>
+</tr>
+</table>
+</div>
+
+<p></p><p></p>
+Этюд 6. Ход белых, выигрыш.
+<p></p>
+<div align=center><table border=1 cellpadding=1 bordercolor="#000000" cellspacing=2 bgcolor="#ffffff">
+<tr valign=top>
+<td rowspan=2 width=50><font size=5 color="#000000" face="Arial">
+<div align=center>71</div>
+</font>
+</td>
+<td width=50><br>
+</td>
+<td width=50><br>
+</td>
+<td width=50><br>
+</td>
+<td width=50><br>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>1</div>
+</font>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>2</div>
+</font>
+</td>
+<td width=50><br>
+</td>
+<td width=50><br>
+</td>
+<td width=50><br>
+</td>
+<td rowspan=2 width=50><font size=5 color="#000000" face="Arial">
+<div align=center>72</div>
+</font>
+</td>
+</tr>
+<tr valign=top>
+<td width=50><br>
+</td>
+<td width=50><br>
+</td>
+<td width=50><br>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>6</div>
+</font>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>x</div>
+</font>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>5</div>
+</font>
+</td>
+<td width=50><br>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>3</div>
+</font>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>2</div>
+</font>
+</td>
+</tr>
+</table>
+</div>
+
+<p></p><p></p>
+Этюд 7. Ход белых, ничья.
+<p></p>
+<div align=center><table border=1 cellpadding=1 bordercolor="#000000" cellspacing=2 bgcolor="#ffffff">
+<tr valign=top>
+<td rowspan=2 width=50><font size=5 color="#000000" face="Arial">
+<div align=center>68</div>
+</font>
+</td>
+<td width=50><br>
+</td>
+<td width=50><br>
+</td>
+<td width=50><br>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>2</div>
+</font>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>3</div>
+</font>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>x</div>
+</font>
+</td>
+<td width=50><br>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>2</div>
+</font>
+</td>
+<td width=50><br>
+</td>
+<td rowspan=2 width=50><font size=5 color="#000000" face="Arial">
+<div align=center>74</div>
+</font>
+</td>
+</tr>
+<tr valign=top>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>x</div>
+</font>
+</td>
+<td width=50><br>
+</td>
+<td width=50><br>
+</td>
+<td width=50><br>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>5</div>
+</font>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>4</div>
+</font>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>1</div>
+</font>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>2</div>
+</font>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>1</div>
+</font>
+</td>
+</tr>
+</table>
+</div>
+
+<p></p><p></p>
+Этюд 8. Ход белых, выигрыш.
+<p></p>
+<div align=center><table border=1 cellpadding=1 bordercolor="#000000" cellspacing=2 bgcolor="#ffffff">
+<tr valign=top>
+<td rowspan=2 width=50><font size=5 color="#000000" face="Arial">
+<div align=center>61</div>
+</font>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>2</div>
+</font>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>2</div>
+</font>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>x</div>
+</font>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>4</div>
+</font>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>4</div>
+</font>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>3</div>
+</font>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>2</div>
+</font>
+</td>
+<td width=50><br>
+</td>
+<td width=50><br>
+</td>
+<td rowspan=2 width=50><font size=5 color="#000000" face="Arial">
+<div align=center>74</div>
+</font>
+</td>
+</tr>
+<tr valign=top>
+<td width=50><br>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>4</div>
+</font>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>3</div>
+</font>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>2</div>
+</font>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>1</div>
+</font>
+</td>
+<td width=50><font size=5 color="#000000" face="Arial">
+<div align=center>x</div>
+</font>
+</td>
+<td width=50><br>
+</td>
+<td width=50><br>
+</td>
+<td width=50><br>
+</td>
+</tr>
+</table>
+</div>
+
+<p></p><p></p>
+Картинка взята с сайта http://www.etsy.com
+		</div>
+		<div id="footer">
+			<span><a href="index.html">Главная</a>|<a href="news.html">Новости</a>|<a href="toguzkumalak.html">О программе</a>|<a href="pavlodar.html">Павлодар</a>|<a href="contacts.html">Контакты</a>|<a href="links.html">Ссылки</a>
+			</span><br>
+			<p>&copy; 2011-2021 Ернар Шамбаев, Диана Кенина, Серик Актаев. All Rights Reserved</p>
+		</div>
+	</body>
+</html>
